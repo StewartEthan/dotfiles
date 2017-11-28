@@ -90,7 +90,7 @@
     "prefer-spread": "warn",
     "prefer-template": "warn",
     "require-yield": "warn",
-    "sort-imports": "warn",
+    "sort-imports": ["warn", { "ignoreMemberSort": true }],
     "symbol-description": "error",
     "yield-star-spacing": ["warn", "after"]
   }

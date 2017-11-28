@@ -8,7 +8,9 @@
   },
 
   "globals": {
+    "Map": false,
     "Promise": false,
+    "Set": false,
     "Symbol": false,
     "console": false,
     "document": false,

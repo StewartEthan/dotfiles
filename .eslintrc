@@ -3,18 +3,25 @@
     "ecmaVersion": 2017,
     "sourceType": "module",
     "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
+      "experimentalObjectRestSpread": true,
+      "jsx": true
     }
   },
 
-  "globals": {
-    "Map": false,
-    "Promise": false,
-    "Set": false,
-    "Symbol": false,
-    "console": false,
-    "document": false,
-    "window": false
+  "plugins": [
+    "react"
+  ],
+  "extends": ["plugin:react/recommended"],
+
+  "settings": {
+    "react": {
+      "pragma": "h"
+    }
+  },
+
+  "env": {
+    "browser": true,
+    "es6": true
   },
 
   "rules": {
@@ -94,6 +101,9 @@
     "require-yield": "warn",
     "sort-imports": ["warn", { "ignoreMemberSort": true }],
     "symbol-description": "error",
-    "yield-star-spacing": ["warn", "after"]
+    "yield-star-spacing": ["warn", "after"],
+
+    "react/jsx-uses-vars": "error",
+    "react/no-unknown-property": "off"
   }
 }
